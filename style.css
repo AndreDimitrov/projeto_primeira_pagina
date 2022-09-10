@@ -315,6 +315,31 @@ td, th {
 	} */
 
 	/* Vamos criar uma query(uma pesquisa para saber o tamanho da tela) */
+
+
+	/* Tela de email enviado com sucesso */
+
+.email-enviado {
+	width: 100px;
+	/* padding: 100px 100px;
+	border-width: 100px;
+	border-color: #BBBBBB; */
+}
+
+.img_checado {
+	width: 150px;
+	margin: 20px 20px 20px 380px;
+}
+
+.email-sucesso p {
+	text-align: center;
+	margin: 20px 0 20px;
+}
+
+.retornar nav a {
+	margin: 20px auto;
+}
+
 @media screen and (max-width: 480px) {
 	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
 		width: auto;
