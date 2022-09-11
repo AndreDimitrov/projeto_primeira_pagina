@@ -144,10 +144,17 @@ form label, form legend {
 	cursor: pointer;
 }
 
+/* Altera a cor do botão ao passar o mouse por cima */
 .enviar:hover {
 	background: darkorange;
 	transform: scale(1.1);
 }
+
+/* Altera a cor do botão ao clicar no mesmo */
+.enviar:active {
+	background: green;
+}
+
 
 table {
 	margin: 40px 0 25px 480px;
@@ -336,8 +343,29 @@ td, th {
 	margin: 20px 0 20px;
 }
 
-.retornar nav a {
-	margin: 20px auto;
+.voltar {
+	margin: 20px 0 0 370px;
+	width: 20%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+/* Altera a cor do botão ao passar o mouse por cima */
+.voltar:hover {
+	background: darkorange;
+	transform: scale(1.1);
+}
+
+/* Altera a cor do botão ao clicar no mesmo */
+.voltar:active {
+	background: green;
 }
 
 @media screen and (max-width: 480px) {
@@ -353,42 +381,90 @@ td, th {
 		position: static;
 	}
 
-	.lista-beneficios, .imagem-beneficios {
+	.lista-beneficios, .imagem-beneficios, .video, .mapa-conteudo {
 		width: 100%;
+		margin: 15px auto;
+	}
+
+	.principal p {
+		margin: 15px 15px 15px 15px;
 	}
 
 	.produtos li {
-		display: grid;
 		width: auto;
-		align-self: auto;
-		
-	}
-}
-
-@media screen and (max-width: 845px) {
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-		width: auto;
+		margin: 10px auto;
 	}
 
-	h1 {
-		text-align: center;
+	.conteudo-beneficios li {
+		margin: 0 15px 0 15px;
 	}
 
-	nav {
-		position: static;
-	}
-
-	.lista-beneficios, .imagem-beneficios, .produtos li {
-		width: 100%;
-	}
-
-	.produtos li {
-		display: grid;
-		width: auto;
-		align-self: auto;
-	}
 
 	.flex-container {
-		flex-wrap: wrap;
-	} 
+		display: flex;
+		margin: 10px 20px;
+	}
+
+	.flex-item {
+		flex-basis: auto;
+		/* margin: 30px 30px 30px 30px; */
+	}
+
+	/* Configuração do formulário */
+
+	form {
+		width: auto;
+	}
+
+	.input-padrao, label {
+		margin: 15px auto;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	label {
+		font-size: 150px;
+	}
+
+	fieldset {
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	select {
+		font-size: 25px;
+	}
+
+	.select option {
+		font-size: 25px;
+	}
+
+	.enviar {
+		width: 100%;
+		font-size: 25px;
+		padding: 0 auto;
+	}
+
+	table {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Configuração da página de envio de email */
+	.retornaremos {
+		padding: 0 100px 0 50x;
+	}
+
+	.img_checado {
+		margin: 0 0 0 120px;
+	}
+
+	.voltar {
+		width: 100%;
+		font-size: 20px;
+		/* padding: 0 auto; */
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 }
